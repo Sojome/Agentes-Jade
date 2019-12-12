@@ -83,7 +83,7 @@ public class PoliciaOntology extends jade.content.onto.Ontology {
             // adding fields
             ladronSchema.add(LADRON_DESCRIPCION, descripcionSchema, ObjectSchema.OPTIONAL);
             motivoSchema.add(MOTIVO_MOTIVO, (TermSchema) getSchema(BasicOntology.STRING), ObjectSchema.OPTIONAL);
-            descripcionSchema.add(DESCRIPCION_ALTURA, (TermSchema) getSchema(BasicOntology.FLOAT), ObjectSchema.OPTIONAL);
+            descripcionSchema.add(DESCRIPCION_ALTURA, (TermSchema) getSchema(BasicOntology.INTEGER), ObjectSchema.OPTIONAL);
             descripcionSchema.add(DESCRIPCION_PESO, (TermSchema) getSchema(BasicOntology.INTEGER), ObjectSchema.OPTIONAL);
             descripcionSchema.add(DESCRIPCION_COLORPELO, (TermSchema) getSchema(BasicOntology.STRING), ObjectSchema.OPTIONAL);
             tiempoLlegadaSchema.add(TIEMPOLLEGADA_TIEMPO, (TermSchema) getSchema(BasicOntology.INTEGER), ObjectSchema.OPTIONAL);

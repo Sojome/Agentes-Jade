@@ -14,7 +14,7 @@ import jade.content.Concept;
 public class Descripcion implements Concept{
     private String colorPelo;
     private int peso;
-    private float altura;
+    private int altura;
 
     public String getColorPelo() {
         return colorPelo;
@@ -32,12 +32,13 @@ public class Descripcion implements Concept{
         this.peso = peso;
     }
 
-    public float getAltura() {
+    public int getAltura() {
         return altura;
     }
 
-    public void setAltura(float altura) {
+    public void setAltura(int altura) {
         this.altura = altura;
     }
+    
     
 }
