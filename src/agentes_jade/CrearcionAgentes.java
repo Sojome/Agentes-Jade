@@ -12,10 +12,11 @@ import jade.core.Profile;
 import jade.core.ProfileImpl;
 
 import jade.wrapper.*;
+import java.net.InetAddress;
 
 /**
  *
- * @author user
+ * @author Aaron Jaramillo
  */
 public class CrearcionAgentes {
 
@@ -44,18 +45,51 @@ public class CrearcionAgentes {
         rt.setCloseVM(true);
 
         // Create a default profile
-        Profile profile = new ProfileImpl("172.29.15.68", 1099, "main");
+        //Buscar direccion en el ipconfig
+        String IP_local = "";
+        try {
+            InetAddress direccion = InetAddress.getLocalHost();
+            IP_local = direccion.getHostAddress();//ip como String
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        //Asignar IP hallada
+        Profile profile = new ProfileImpl(IP_local, 1099, "main");
 
         AgentContainer mainContainer = jade.core.Runtime.instance().createMainContainer(profile);
-
-        AgentController rma = null;
+        
+        AgentController AgenteTonto = null;
+        AgentController AgenteCyclicBehavior = null;
+        AgentController AgenteFsmBehavior = null;
+        AgentController AgenteOneShotBehavior = null;
+        AgentController AgenteParallelBehavior = null;
+        AgentController AgenteSequentialBehavior = null;
+        AgentController Comportamiento_Ciclico_Periodico_Tarea = null;
+        
 
         try {
 
-            rma = mainContainer.createNewAgent("tonto", "agentes_jade.AgenteTonto", new Object[0]);
-
-            rma.start();
-
+            AgenteTonto = mainContainer.createNewAgent("tonto", "agentes_jade.AgenteTonto", new Object[] {"argumento1","argumento2","888"});
+            //AgenteTonto.start();
+            
+            AgenteCyclicBehavior = mainContainer.createNewAgent("tonto1", "agentes_jade.AgenteCyclicBehavior", new Object[0]);
+            //AgenteCyclicBehavior.start();            
+            
+            AgenteFsmBehavior = mainContainer.createNewAgent("tonto2", "agentes_jade.AgenteFsmBehavior", new Object[0]);
+            AgenteFsmBehavior.start();
+            
+            AgenteOneShotBehavior = mainContainer.createNewAgent("tonto3", "agentes_jade.AgenteOneShotBehavior", new Object[0]);
+            //AgenteOneShotBehavior.start();
+            
+            AgenteParallelBehavior = mainContainer.createNewAgent("tonto4", "agentes_jade.AgenteParallelBehavior", new Object[0]);
+            //AgenteParallelBehavior.start();
+            
+            AgenteSequentialBehavior = mainContainer.createNewAgent("tonto5", "agentes_jade.AgenteSequentialBehavior", new Object[0]);
+            //AgenteSequentialBehavior.start();
+            
+            Comportamiento_Ciclico_Periodico_Tarea = mainContainer.createNewAgent("tonto6", "agentes_jade.Comportamiento_Ciclico_Periodico_Tarea", new Object[0]);
+            //Comportamiento_Ciclico_Periodico_Tarea.start();
+            
         } catch (StaleProxyException e) {
 
             e.printStackTrace();

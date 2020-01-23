@@ -17,6 +17,7 @@ import jade.proto.AchieveREResponder;
  *
  * @author Aaron Jaramillo
  */
+//-gui -port 1098 Lavacolla:protocolos.Query.Aeropuerto;via:protocolos.Query.Viajante
 public class Aeropuerto extends Agent {
  
     protected void setup() {

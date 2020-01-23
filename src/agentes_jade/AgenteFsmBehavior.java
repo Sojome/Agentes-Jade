@@ -11,7 +11,7 @@ import jade.core.behaviours.OneShotBehaviour;
 
 /**
  *
- * @author user
+ * @author Aaron Jaramillo
  */
  //-gui -port 1098 tonto1:agentes_jade.AgenteFsmBehavior
 public class AgenteFsmBehavior extends Agent {

@@ -11,7 +11,7 @@ import jade.core.behaviours.ParallelBehaviour;
 
 /**
  *
- * @author user
+ * @author Aaron Jaramillo
  */
 public class AgenteParallelBehavior extends Agent {
 

@@ -62,7 +62,7 @@ public class Agente2 extends Agent {
             } catch (Exception e) {
             }
 
-            System.out.println(getAID() + " ha registrado los servicios con exito");
+            System.out.println(getAID().getLocalName() + " ha registrado los servicios con exito");
         }
     }
 }

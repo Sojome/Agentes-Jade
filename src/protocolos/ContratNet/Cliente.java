@@ -21,6 +21,7 @@ import java.util.Vector;
  *
  * @author Aaron Jaramillo
  */
+//-gui -port 1098 autos:protocolos.ContratNet.Autos;cliente:protocolos.ContratNet.Cliente(40);
 public class Cliente extends Agent {
  
     //Número de ofertas que se considerarán.

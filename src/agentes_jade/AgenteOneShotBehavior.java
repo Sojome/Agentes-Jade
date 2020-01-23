@@ -11,7 +11,7 @@ import jade.core.Agent;
 
 /**
  *
- * @author user
+ * @author Aaron Jaramillo
  */
 public class AgenteOneShotBehavior extends Agent {
 

@@ -31,7 +31,7 @@ import jade.content.onto.*;
  *
  * @author Aaron Jaramillo
  */
-//-gui -port 1098 Comprador:ontologias.Comprador;Vendedor:ontologias.Vendedor
+//-gui -port 1098 Comprador:ontologias.Fruta.Comprador;Vendedor:ontologias.Fruta.Vendedor
 
 //-gui -port 1098 Vendedor:ontologias.Vendedor;Comprador:ontologias.Comprador
 

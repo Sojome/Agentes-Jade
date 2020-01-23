@@ -10,7 +10,7 @@ import jade.core.behaviours.*;
 
 /**
  *
- * @author user
+ * @author Aaron Jaramillo
  */
 
 public class Comportamiento_Ciclico_Periodico_Tarea extends Agent {

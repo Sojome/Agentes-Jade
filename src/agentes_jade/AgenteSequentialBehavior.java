@@ -11,7 +11,7 @@ import jade.core.behaviours.SequentialBehaviour;
 
 /**
  *
- * @author user
+ * @author Aaron Jaramillo
  */
 public class AgenteSequentialBehavior extends Agent {
 

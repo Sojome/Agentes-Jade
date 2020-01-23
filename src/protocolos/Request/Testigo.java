@@ -14,6 +14,7 @@ import jade.domain.FIPANames;
  *
  * @author Aaron Jaramillo
  */
+//-gui -port 1098 A:protocolos.Request.Testigo(via);via:protocolos.Request.Hospital
 public class Testigo extends Agent {
  
     protected void setup()

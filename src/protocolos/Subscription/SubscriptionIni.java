@@ -16,6 +16,8 @@ import jade.proto.SubscriptionInitiator;
  *
  * @author Aaron Jaramillo
  */
+
+//-gui -port 1098 MediaMarket:protocolos.Subscription.SubscriptionRes;ala:protocolos.Subscription.SubscriptionIni;
 public class SubscriptionIni extends Agent {
 
     protected void setup() {

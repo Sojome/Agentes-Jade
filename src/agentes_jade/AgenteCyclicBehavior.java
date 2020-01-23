@@ -11,12 +11,13 @@ import jade.core.Agent;
 
 /**
  *
- * @author user
+ * @author Aaron Jaranillo
  */
 public class AgenteCyclicBehavior extends Agent {
 
     public void setup() {
         //-gui -port 1098 tonto1:agentes_jade.AgenteCyclicBehavior
+        //Instancia el comportamiento
         MyCyclicBehavior c = new MyCyclicBehavior();
         addBehaviour(c);
     }
