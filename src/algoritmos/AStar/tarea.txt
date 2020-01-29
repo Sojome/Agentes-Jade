@@ -1,0 +1,23 @@
+10 10
+col
+eu
+col bol 4
+col ecu 3
+ecu chi 8
+chi per 2
+per cos 15
+cos eu 7
+eu uru 20 
+bol bra 7
+bra pan 9
+pan uru 6
+col 120
+bol 90
+ecu 118
+chi 145
+bra 194
+pan 48
+per 93
+uru 78
+cos 177
+eu 0
